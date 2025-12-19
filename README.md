@@ -100,7 +100,7 @@ pythonProject/
 
 1. **启动程序**：
    ```bash
-   python main2_no_vertifacation.py
+   python main.py
    ```
 
 2. **首次运行**：
