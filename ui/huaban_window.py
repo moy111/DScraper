@@ -66,6 +66,13 @@ class HuabanScraperApp(QWidget):
         if self.ui_elements["start_button"]:
             self.ui_elements["start_button"].setText("开始爬取用户主页画板")
 
+        # 获取现有的 placeholder 文本
+        existing_placeholder = self.ui_elements["log_placeholder"]
+        # 在末尾添加一行新的文本
+        new_placeholder = existing_placeholder + "\n（当前网页HTML元素有调整，此版本暂时不可用，欢迎优化）"
+        # 更新 log_output 的 placeholderText
+        self.ui_elements["log_output"].setPlaceholderText(new_placeholder)
+
         # 连接 UI 按钮与爬虫启动和停止的功能
         self.ui_elements["start_button"].clicked.connect(self.start_scraper)
         self.ui_elements["stop_button"].clicked.connect(self.stop_scraper)

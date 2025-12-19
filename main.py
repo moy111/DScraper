@@ -70,10 +70,10 @@ print(f"所有包导入完成: {time.time() - start_time:.3f} seconds")
 
 
 current_version = '1.1.0'
-app_name = "Crawloo爬虫工具箱"
+app_name = "DScraper爬虫工具箱"
 
 # 1. 确保日志目录在用户主目录下
-log_dir = os.path.join(os.path.expanduser("~"), "crawloo_logs")
+log_dir = os.path.join(os.path.expanduser("~"), "DScraper_logs")
 try:
     os.makedirs(log_dir, exist_ok=True)
 except Exception as e:
@@ -89,7 +89,7 @@ class FlushFileHandler(logging.FileHandler):
         self.flush()  # 强制写入，防止日志丢失
 
 # 4. 获取全局 logger
-logger = logging.getLogger("crawloo")
+logger = logging.getLogger("DScraper")
 logger.setLevel(logging.DEBUG)
 
 # 5. 清理已存在的 handler，防止重复日志
@@ -123,7 +123,7 @@ if getattr(sys, 'frozen', False):
 logger.debug("日志系统初始化完成")
 print(f"日志系统初始化完成: {time.time()}")
 
-AppName = "com.Crawloo"
+AppName = "com.DScraper"
 
 # 获取系统是否为深色模式
 is_dark_mode = QApplication.palette().color(QPalette.Window).value() < 128
@@ -340,7 +340,7 @@ if __name__ == '__main__':
         main()
     except Exception as e:
         # 捕获异常并记录日志
-        error_log = os.path.expanduser("~/crawloo_error.log")
+        error_log = os.path.expanduser("~/DScraper_error.log")
         with open(error_log, "w") as f:
             traceback.print_exc(file=f)
         print(f"An error occurred. Check the log file at: {error_log}")

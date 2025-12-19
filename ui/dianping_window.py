@@ -62,7 +62,7 @@ class DianpingScraperApp(QWidget):
         # 获取现有的 placeholder 文本
         existing_placeholder = self.ui_elements["log_placeholder"]
         # 在末尾添加一行新的文本
-        new_placeholder = existing_placeholder + "\n注：由于大众点评的反爬机制，尽管此爬虫设置了比较保守的访问频率，但仍可能被平台识别出从而限制账号"
+        new_placeholder = existing_placeholder + "\n注：由于大众点评的反爬机制，尽管此爬虫设置了比较保守的访问频率，但仍可能被平台识别出从而限制账号\n（当前网页HTML元素有调整，此版本暂时不可用，欢迎优化）"
         # 修改 page_label 的文本
         # 更新 log_output 的 placeholderText
         self.ui_elements["log_output"].setPlaceholderText(new_placeholder)

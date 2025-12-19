@@ -64,7 +64,7 @@ class ZnzmoScraperApp(QWidget):
         # 获取现有的 placeholder 文本
         existing_placeholder = self.ui_elements["log_placeholder"]
         # 在末尾添加一行新的文本
-        new_placeholder = existing_placeholder + "\n此爬虫只能爬取部分无水印预览图片，更多原图请访问「知末网」官网下载"
+        new_placeholder = existing_placeholder + "\n此爬虫只能爬取部分无水印预览图片，更多原图请访问「知末网」官网下载\n（当前网页HTML元素有调整，此版本暂时不可用，欢迎优化）"
         # 更新 log_output 的 placeholderText
         self.ui_elements["log_output"].setPlaceholderText(new_placeholder)
 
