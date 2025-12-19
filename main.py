@@ -129,45 +129,6 @@ AppName = "com.Crawloo"
 is_dark_mode = QApplication.palette().color(QPalette.Window).value() < 128
 print("Is dark mode:", is_dark_mode)  # 打印出当前模式
 
-# 保存激活码到系统安全存储
-def save_serial_number(serial_number):
-    try:
-        logging.info(f"正在保存激活码到系统安全存储: {serial_number}")
-        keyring.set_password(AppName, "serial_number", serial_number)
-        logging.info("激活码保存成功")
-    except Exception as e:
-        logging.error(f"保存激活码失败: {e}")
-
-def load_serial_number():
-    try:
-        serial_number = keyring.get_password(AppName, "serial_number")
-        if serial_number:
-            logging.info(f"成功加载激活码: {serial_number}")
-        else:
-            logging.info("未找到激活码")
-        return serial_number
-    except Exception as e:
-        logging.error(f"加载激活码失败: {e}")
-        return None
-
-def delete_serial_number():
-    try:
-        logging.info("正在尝试删除激活码...")
-        keyring.delete_password(AppName, "serial_number")
-        logging.info("激活码删除成功")
-
-        # 等待2秒钟确保删除操作完成
-        time.sleep(2)
-
-        # 尝试再次加载，确保删除生效
-        serial_number_after_delete = load_serial_number()
-        if not serial_number_after_delete:
-            logging.info("激活码已经成功删除。")
-        else:
-            logging.warning(f"删除后仍然加载到激活码: {serial_number_after_delete}")
-    except Exception as e:
-        logging.error(f"删除激活码失败: {e}")
-
 
 class MainApp(QMainWindow):
     def __init__(self):
