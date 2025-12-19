@@ -57,9 +57,6 @@ pythonProject/
 │   │   └── window_ui.py         # 窗口UI组件
 │   ├── licenses_utils/          # 许可证工具
 │   │   └── licenses.py          # 免责声明对话框
-│   ├── login_utils/             # 登录工具
-│   │   ├── browser_setup.py     # 浏览器配置
-│   │   └── cookies_manager.py   # Cookie管理
 │   └── scraper_utils/           # 爬虫工具
 │       ├── download_image.py    # 图片下载
 │       ├── scraper_utils.py     # 爬虫通用工具
