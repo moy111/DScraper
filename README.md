@@ -125,7 +125,6 @@ pythonProject/
 - **WordCloud**：词云生成
 - **Pandas**：数据处理
 - **Matplotlib**：数据可视化
-- **Keyring**：安全凭据存储
 
 完整依赖列表请查看 `requirements.txt` 文件。
 
