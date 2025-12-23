@@ -34,7 +34,7 @@ class Dpscraper:
 
         # 尝试获取或加载 cookies
         login_url = "https://www.dianping.com/chengdu"  # 替换为实际的登录 URL
-        get_or_load_cookies(self.driver, login_url, "dianping", self.log_signal, login_click_xpath="//*[@id='top-nav']/div/div[2]/span[1]/a")
+        get_or_load_cookies(self.driver, login_url, "dianping", self.log_signal, login_click_xpath="//*[@id='__next']/div/div[1]/div[1]/div/div[3]/div[3]")
 
 
     def generate_filename(self):

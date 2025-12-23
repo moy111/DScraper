@@ -8,10 +8,11 @@
   - ArchDaily（建筑设计）
   - 视觉中国（VCG）
   - Gooood（设计网站）
-  - 知末效果图（ZNZMO）（当前网页HTML元素有调整，此版本暂时不可用，欢迎优化）
-  - 花瓣网（Huaban）（当前网页HTML元素有调整，此版本暂时不可用，欢迎优化）
-  - 大众点评（Dianping）（当前网页HTML元素有调整，此版本暂时不可用，欢迎优化）
-  - 小红书（Xiaohongshu）（当前网页HTML元素有调整，此版本暂时不可用，欢迎优化）
+  - 知末效果图（ZNZMO）（当前网页HTML元素有调整，此版本暂时不可用，欢迎优化）👉 [知末效果图模拟点击登录按钮路径修改](web_scraper/znzmo_scraper.py)
+  - 花瓣网（Huaban）（当前网页HTML元素有调整，此版本暂时不可用，欢迎优化）👉 [花瓣网模拟点击登录按钮路径修改](web_scraper/huaban_scraper.py)
+  - 大众点评（Dianping）（当前网页HTML元素有调整，此版本暂时不可用，欢迎优化）👉 [大众点评模拟点击登录按钮路径修改](web_scraper/dianping_scraper.py)
+  - 小红书（Xiaohongshu）（当前网页HTML元素有调整，此版本暂时不可用，欢迎优化）👉 [小红书模拟点击登录按钮路径修改](web_scraper/xhs_scraper.py)
+  - 👉 [每个网站的登录检查规则路径修改](utils/login_utils/cookies_manager.py)
 
 - **图形界面**：基于 PyQt6 的现代化用户界面
 - **状态监控**：实时显示各模块运行状态

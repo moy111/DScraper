@@ -12,10 +12,10 @@ from selenium.webdriver.common.by import By
 # 定义每个网站的登录检查规则
 # """记录已经登陆的特征"""
 LOGIN_CHECK_RULES = {
-    "znzmo": {"by": By.CLASS_NAME, "value": "components-Header-index__iconSort__gtvzg"},
-    "huaban": {"by": By.XPATH, "value": "//*[@id='__next']/main/div[1]/div/div/div[5]/a"},
-    "dianping": {"by": By.XPATH, "value": "//*[@id='__next']/div/div[1]/div[2]/div[3]/div"},
-    "xhs": {"by": By.XPATH, "value": "//*[@id='global']/div[2]/div[1]/ul/li[4]/div/a/span[1]/div"},
+    "znzmo": {"by": By.XPATH, "value": "//*[@id='__next']/main/div/div[1]/div[1]/div/div/div[2]/div[5]"},
+    "huaban": {"by": By.XPATH, "value": "//*[@id='layout-header']/div/div[2]/div[1]"},
+    "dianping": {"by": By.XPATH, "value": "//*[@id='__next']/div/div[1]/div[1]/div/div[3]/div[3]/div"},
+    "xhs": {"by": By.XPATH, "value": "//*[@id='global']/div[2]/div[1]/ul/div[1]/li[4]/div"},
     "tianyancha": {"by": By.XPATH, "value": "//*[@id='page-header']/div/div[2]/div/div[6]/div/a"},
     "necipc": {"by": By.XPATH, "value": "/html/body/div[5]/div[2]/div[4]/div[2]/div"}
     # 添加更多规则...

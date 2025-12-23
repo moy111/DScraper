@@ -30,7 +30,7 @@ class ZnzmoScraper(QObject):
 
         # 尝试获取或加载 cookies
         login_url = "https://www.znzmo.com"  # 替换为实际的登录 URL
-        get_or_load_cookies(self.driver, login_url, "znzmo", self.log_signal, login_click_xpath="//*[@id='loginsuccessnews']")
+        get_or_load_cookies(self.driver, login_url, "znzmo", self.log_signal, login_click_xpath="//*[@id='__next']/main/div/div[1]/div[1]/div/div/div[2]/div[5]/span[1]")
 
         # 测试访问一个需要登录的页面
         self.driver.get("https://xiaoguotu.znzmo.com/xgt/1112994507.html?hsQuery=河岸")
