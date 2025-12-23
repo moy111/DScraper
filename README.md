@@ -157,6 +157,8 @@ pythonProject/
 
 本项目仅供学习和研究使用，请遵守相关法律法规。使用前请仔细阅读免责声明。
 
+👉 [免责声明（Disclaimer）](data/disclaimer_text.txt)
+
 ## 联系方式
 
 如有问题或建议，请通过项目仓库提交 Issue。
