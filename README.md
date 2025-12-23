@@ -81,6 +81,10 @@ pythonProject/
 ### 安装依赖
 
 1. 克隆或下载项目到本地目录
+   ```bash
+   git clone https://github.com/moy111/DScraper.git
+   cd DScraper
+   ```
 
 2. 安装 Python 依赖：
    ```bash
