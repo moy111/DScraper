@@ -1,5 +1,5 @@
 # DScraper 爬虫工具箱
-
+https://qjdxx9wxscbnncpx.public.blob.vercel-storage.com/DScraper.png
 一个基于 PyQt6 的多网站爬虫工具箱，提供图形界面，支持多种设计和图片网站的自动化数据采集。
 
 ## 版本信息
