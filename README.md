@@ -28,8 +28,7 @@
 
 ```
 pythonProject/
-├── main2_no_vertifacation.py    # 主程序入口
-├── main2_no_vertifacation.spec  # PyInstaller 打包配置
+├── main.py    # 主程序入口
 ├── requirements.txt             # Python 依赖列表
 ├── app.log                      # 应用程序日志
 ├── README.md                    # 项目说明文档
