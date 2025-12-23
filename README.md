@@ -4,7 +4,7 @@
 一个基于 PyQt6 的多网站爬虫工具箱，提供图形界面，支持多种设计和图片网站的自动化数据采集。
 
 ## 功能特性
-- **多网站支持**：集成多个设计和图片网站的爬虫模块
+- **多网站支持**：集成多个设计和图片网站的爬虫模块（注：每个模拟点击登录按钮的路径和验证登录成功并开始爬取内容的路径，需要随着网站的更新而更新，由这个方法管理👉 [get_or_load_cookies](utils/login_utils/cookies_manager.py)）
   - ArchDaily（建筑设计）
   - 视觉中国（VCG）
   - Gooood（设计网站）
@@ -12,7 +12,6 @@
   - 花瓣网（Huaban）（当前网页HTML元素有调整，此版本暂时不可用，欢迎优化）👉 [花瓣网模拟点击登录按钮路径修改](web_scraper/huaban_scraper.py)
   - 大众点评（Dianping）（当前网页HTML元素有调整，此版本暂时不可用，欢迎优化）👉 [大众点评模拟点击登录按钮路径修改](web_scraper/dianping_scraper.py)
   - 小红书（Xiaohongshu）（当前网页HTML元素有调整，此版本暂时不可用，欢迎优化）👉 [小红书模拟点击登录按钮路径修改](web_scraper/xhs_scraper.py)
-  - 👉 [每个网站的登录检查规则路径修改](utils/login_utils/cookies_manager.py)
 
 - **图形界面**：基于 PyQt6 的现代化用户界面
 - **状态监控**：实时显示各模块运行状态
